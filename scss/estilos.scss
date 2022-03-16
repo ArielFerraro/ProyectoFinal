@@ -1,11 +1,18 @@
-@import "colores";
+
 @import "tipografia";
 @import "estructuras";
+
+$orange: orange;
+$white: white;
+$espaciado: 10px;
+$espaciado2: 5px;
+$font: 35px;
+
 
 ul {
     list-style: none;
     li {
-        padding: 15px;
+        padding: $espaciado + $espaciado2;
         text-decoration-style:dotted;
     a {
     font-size: 16px;
@@ -13,14 +20,27 @@ ul {
         }
         &:hover {
             color: rgb(251, 251, 253);
-            background-color: white;
+            background-color: $white;
         }
         &:active {
-            background-color: orange;
+            background-color: $orange;
         }
     }
 }
 
+body {
+    margin: 0;
+    padding: 0%;
+}
+
 p {
-    font-size: 35px;
+    font-size: $font;
+}
+
+$fondo: (color1:rgb(243, 146, 34), color2:black);
+    
+@each $clave, $valor  in $fondo {
+    .#{$clave} {
+        background-color: $valor;
+    }
 }
