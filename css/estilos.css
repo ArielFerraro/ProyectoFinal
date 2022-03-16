@@ -19,9 +19,12 @@ ul {
     ul li:active {
       background-color: orange; }
 
+.mp, body {
+  margin: 0px;
+  padding: 0px; }
+
 body {
-  margin: 0;
-  padding: 0%; }
+  background-color: black; }
 
 p {
   font-size: 35px; }
@@ -31,3 +34,7 @@ p {
 
 .color2 {
   background-color: black; }
+
+.parrafo {
+  font-size: 100px;
+  padding: 15px; }

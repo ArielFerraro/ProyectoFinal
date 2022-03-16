@@ -7,6 +7,10 @@ $white: white;
 $espaciado: 10px;
 $espaciado2: 5px;
 $font: 35px;
+$black: black;
+$font2: 100px;
+$padding:15px;
+
 
 
 ul {
@@ -28,9 +32,14 @@ ul {
     }
 }
 
+.mp {
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
-    margin: 0;
-    padding: 0%;
+    @extend .mp;
+    background-color:$black;
 }
 
 p {
@@ -39,8 +48,17 @@ p {
 
 $fondo: (color1:rgb(243, 146, 34), color2:black);
     
-@each $clave, $valor  in $fondo {
+@each $clave, $valor in $fondo {
     .#{$clave} {
         background-color: $valor;
     }
+}
+
+@mixin parrafo ($font2,$padding){
+    font-size:$font2;
+    padding:$padding;
+}
+
+.parrafo {
+    @include parrafo ($font2, $padding)
 }
