@@ -1,5 +1,5 @@
 {
-  "name": "clase13",
+  "name": "3ra-entrega-proyecto-final",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -7,7 +7,7 @@
     "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
-  "author": "",
+  "author": "Ariel Ferraro",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^7.0.1",
@@ -296,5 +296,5 @@
     "yargs": "^17.3.1",
     "yargs-parser": "^20.2.9"
   },
-  "description": ""
+  "description": "diseño de la pagina web de Fito Paez, donde se puede ver tanto su Biografia y discografia,como su galeria de fotos y pedido de entradas para sus shows"
 }
