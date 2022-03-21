@@ -38,3 +38,6 @@ p {
 .parrafo {
   font-size: 100px;
   padding: 15px; }
+
+form {
+  padding-bottom: 150px; }

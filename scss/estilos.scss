@@ -61,3 +61,7 @@ $fondo: (color1:rgb(243, 146, 34), color2:black);
 .parrafo {
     @include parrafo ($font2, $padding)
 }
+
+form {
+    padding-bottom: 150px;
+}
