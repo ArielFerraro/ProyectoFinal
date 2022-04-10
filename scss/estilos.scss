@@ -38,14 +38,14 @@ ul {
 
 body {
     @extend .mp;
-    background-color:$black;
+    background-color:$white;
 }
 
 p {
-    font-size: $font;
+    font-size: $font; ;
 }
 
-$fondo: (color1:rgb(243, 146, 34), color2:black);
+$fondo: (color1:rgb(189, 186, 186), color2:rgb(255, 255, 255));
     
 @each $clave, $valor in $fondo {
     .#{$clave} {
